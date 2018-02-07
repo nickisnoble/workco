@@ -1,0 +1,12 @@
+{
+	"name": "NNW-workco",
+	"description": "A microsite to apply for a job at Work&Co",
+	"author": "Nick Noble",
+	"devDependencies": {
+		"browser-sync": "^2.23.6",
+		"es6-promise": "^4.2.4",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.1.0",
+		"gulp-sass": "^3.1.0"
+	}
+}

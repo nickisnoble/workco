@@ -1,0 +1,10 @@
+# Ignore dependencies
+node_modules
+
+# Ignore output
+dist
+*.css
+
+# Ignore gack
+*.log
+DS_Store

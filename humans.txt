@@ -1,0 +1,23 @@
+/* TEAM */
+
+  Content: Nick Noble
+
+  Development: Nick Noble
+
+  Design: Nick Noble, ruthlessly stealing from Work&Co
+
+  Bad Jokes: Nick Noble
+  Site: http://nicknoble.works
+  Twitter: @nickisnoble
+  Location: Brooklyn, NY
+
+/* SPECIAL THANKS */
+
+  Brett Bergeron, Creative Director, This Also
+                            
+/* SITE */
+
+  Last update: 2018/02/DD 
+  Language: English
+  Standards: HTML5, CSS3/4
+  Software: Sublime Text 3, Yarn, NPM, Gulp, iTerm 2, ZSH
