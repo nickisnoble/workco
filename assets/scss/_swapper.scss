@@ -1,0 +1,40 @@
+#swapper{
+  > * {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    text-align: center;
+    z-index: 1;
+  }
+
+  > :last-child{
+    &:after{
+      content: "";
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(to bottom, transparent 30%, #fff 90%);
+    }
+  }
+
+  .clip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    clip: rect(0, auto, auto, 0);
+  }
+
+  h1{
+    position: fixed;
+    top: 50%;
+    left: 72px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+}
