@@ -1,0 +1,10 @@
+
+// For all named colors from _settings
+@each $color, $value in $colors{
+  
+  // Create text color classes
+  .c-#{$color}{ color: #{$value}; }
+  
+  // Create background color classes
+  .b-#{$color}{ background-color: #{$value}; }
+}
