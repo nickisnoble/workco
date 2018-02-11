@@ -1,10 +1,12 @@
 .swapper{
+  margin: 0;
+
   > * {
     position: relative;
     left: 0;
     right: 0;
     height: 100vh;
-    text-align: center;
+    white-space: nowrap;
     z-index: 1;
 
     margin-top: 0;
@@ -35,8 +37,10 @@
   h1{
     position: fixed;
     top: 50%;
-    left: 72px;
+    left: 1em;
     margin: 0;
     transform: translateY(-50%);
+
+    font-size: 5vw;
   }
 }
