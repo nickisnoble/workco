@@ -2,6 +2,10 @@ html{
   box-sizing: border-box;
 }
 
+html, body, script, main{
+  margin: 0;
+}
+
 *{
   &,
   &:before,
