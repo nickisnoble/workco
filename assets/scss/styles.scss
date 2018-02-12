@@ -5,6 +5,7 @@
 // Base
 @import "global";
 @import "type";
+@import "elements";
 
 // Components
 @import "sections";
@@ -12,5 +13,6 @@
 // Utility
 @import "color";
 
-// Specifics
+// singletons
+@import "logo";
 @import "swapper";
