@@ -6,10 +6,12 @@
 @import "global";
 @import "type";
 @import "elements";
-@import "layout";
 
 // Components
 @import "sections";
+@import "block";
+@import "grid";
+@import "number";
 
 // Utility
 @import "color";

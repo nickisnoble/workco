@@ -11,26 +11,19 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 8rem;
+    padding-left: 9rem;
     padding-right: 4rem;
   }
 
-
-  // Offset logo height on first item
-  &:first-of-type{
-    // margin-top: -8rem;
-
-    > .section-header{
-      // padding-top: 1rem;
-    }
-  }
 }
 
 .section-header{
   h4{
-    display: block;
-    padding-bottom: 1em;
-    text-align: right;
+    @media screen and (max-width: 1200px - 1px){ 
+      margin-top: 0.5em;
+      text-align: right; 
+      padding-bottom: 1em;
+    }
   }
 
   @supports(position:sticky){

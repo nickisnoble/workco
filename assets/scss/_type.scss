@@ -22,6 +22,7 @@ h1, h2, h3{
   font-weight: 700;
   margin-top: 1em;
   margin-bottom: 4px;
+  letter-spacing: -0.02em;
   & + p {
     margin-top: 0;
   }
@@ -29,21 +30,32 @@ h1, h2, h3{
 
 h1{ font-size: 3.5em; }
 h2{ font-size: 1.5em; }
-h3{ font-size: 1em; }
+h3{ 
+  font-size: 1em; 
+  margin-top: 0;
+}
 
 h4{
   @extend %serif;
-  font-size: 0.75em;
+  position: relative;
   font-style: italic;
   color: $transparency;
-  border-bottom: 1px solid currentColor;
-  margin-top: 2em;
+  margin-top: 1.5em;
+
+  &:after{
+    opacity: 0.25;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid currentColor;
+  }
 }
 
 p{
   &.lead{
-    @extend %sans;
-    font-weight: 500;
+    
   }
 }
 
