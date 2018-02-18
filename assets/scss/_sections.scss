@@ -1,4 +1,45 @@
-main > section {
+.section{
   min-height: 100vh;
   margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+
+  @media screen and (min-width: 700px) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 8rem;
+    padding-right: 4rem;
+  }
+
+
+  // Offset logo height on first item
+  &:first-of-type{
+    // margin-top: -8rem;
+
+    > .section-header{
+      // padding-top: 1rem;
+    }
+  }
+}
+
+.section-header{
+  h4{
+    display: block;
+    padding-bottom: 1em;
+    text-align: right;
+  }
+
+  @supports(position:sticky){
+    position: sticky;
+    top: 0;
+  }
+
+  // Account for logo height, including border
+  padding-top: calc( 1rem + 0.25rem);
+  @media screen and (min-width: 700px)  { padding-top: calc( 3rem + 0.25rem); }
+  @media screen and (min-width: 1200px) { padding-top: calc( 2rem + 0.25rem); }
 }

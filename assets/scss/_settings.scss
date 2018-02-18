@@ -1,14 +1,22 @@
 $highlight: #f33;
 
 $black:     #000;
-$gray:      rgba(0,0,0,0.4);
+$dark:      #7f7f7f;
+$gray:      #aaa;
 $light:     #f6f6f6;
 $white:     #fff;
+
+$transparency: rgba(0,0,0,0.35);
 
 $colors: (
   highlight: $highlight,
   black:     $black,
+  dark:      $dark,
   gray:      $gray,
   light:     $light,
   white:     $white,
+
+  transparency:     $transparency,
 );
+
+$golden: 1.618;
