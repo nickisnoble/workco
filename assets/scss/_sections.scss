@@ -29,6 +29,7 @@
   @supports(position:sticky){
     position: sticky;
     top: 0;
+    z-index: 6;
   }
 
   // Account for logo height, including border

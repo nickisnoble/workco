@@ -1,0 +1,7 @@
+.zigzag{
+  figure{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 0.5em));
+    grid-column-gap: 1em;
+  }
+}
