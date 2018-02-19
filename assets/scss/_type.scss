@@ -41,6 +41,9 @@ h4{
   font-style: italic;
   color: $transparency;
   margin-top: 1.5em;
+  margin-bottom: 4px;
+
+  z-index: -1; // Keep h4 in the same plane as static elements
 
   &:after{
     opacity: 0.25;
@@ -54,14 +57,28 @@ h4{
 }
 
 p{
-  &.lead{
-    
+  strong{
+    @extend %sans;
+    font-weight: 500;
+    font-size: 0.8em;
   }
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .title{
   color: $highlight;
   text-transform: uppercase;
+  margin-bottom: 1em;
+  line-height: 1.1;
+}
+
+// Readability container
+.text{
+  max-width: 38em;
 }
 
 %sans, .sans{

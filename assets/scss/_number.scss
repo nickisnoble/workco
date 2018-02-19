@@ -1,6 +1,8 @@
 .number{
   @extend %sans;
-  font-size: 1.2em;
+  display: inline-block;
+  font-size: 1em;
   font-weight: 700;
   font-style: normal;
+  margin-right: 1em;
 }

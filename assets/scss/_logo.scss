@@ -11,41 +11,39 @@
     z-index: 7;
   }
 
-  font-size: 10px;
+  font-size: 0.75rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: -7em;
+  margin-bottom: -6em;
 
   @media screen and (min-width: 700px) {
     padding-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-bottom: -13em;
+    margin-bottom: -9em;
   }
 
   @media screen and (min-width: 1200px) {
-    font-size: 0.75rem;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: -9em;
     padding: 3rem 1rem 1rem 1rem;
   }
 
   .wrapper{
     position: relative;
     height: 2.6rem;
-    width: 2.6rem*$golden;
+    width: 2.6rem * $golden;
     display: inline-block;
   }
 
   span{
     display: block;
-    border: 0.15rem solid $highlight;
-    padding: 0.1rem;
-    height: inherit;
-    width: inherit;
+    box-shadow: inset 0 0 0 0.15rem $highlight;
+    padding: 0.25rem;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     margin: 0;
