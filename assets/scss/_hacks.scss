@@ -6,38 +6,3 @@
   position: relative;
   z-index: 8;
 }
-
-
-.scale-frame{
-  position: relative;
-  overflow: hidden;
-
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: (9 / 16) * 100%;
-  }
-
-  > iframe {
-    position: absolute;
-
-    width: calc(100vw - 5rem);
-    transform-origin: 0 0;
-    transform: scale(0.5);
-
-    height: 200%;
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    border: 1px solid $dark;
-    box-shadow: 0 0 0 0 transparent;
-
-    &:hover{
-      box-shadow: 0 0 0 5px $transparency;
-    }
-  }
-}
