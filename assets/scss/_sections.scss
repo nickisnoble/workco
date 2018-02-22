@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 8rem;
+    padding-left: 10rem;
     padding-right: 4rem;
 
     &:before{
@@ -43,7 +43,7 @@
   }
 
   // Account for logo height, including border
-  padding-top: calc( 1rem + 0.25rem);
-  @media screen and (min-width: 700px)  { padding-top: calc( 3rem + 0.25rem); }
-  @media screen and (min-width: 1200px) { padding-top: calc( 2rem + 0.25rem); }
+  padding-top: calc( 1rem + 0.5rem);
+  @media screen and (min-width: 700px)  { padding-top: calc( 3rem + 0.5rem); }
+  @media screen and (min-width: 1200px) { padding-top: calc( 2rem + 0.5rem); }
 }
