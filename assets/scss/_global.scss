@@ -3,6 +3,11 @@ html{
   scroll-behavior: smooth;
 }
 
+body{
+  // overflow-y: hidden;
+  // overflow-x: auto;
+}
+
 html, body, script, main{
   margin: 0;
 }

@@ -43,8 +43,6 @@ h4{
   margin-top: 1.5em;
   margin-bottom: 4px;
 
-  z-index: -1; // Keep h4 in the same plane as static elements
-
   &:after{
     opacity: 0.25;
     content: "";

@@ -1,10 +1,9 @@
 .scale-frame{
-  width: calc(100vw - 5rem);
-  transform-origin: 0 0;
-  transform: scale(0.5);
+  width: 100%;
 
-  @media screen and (min-width: 1200px){
-    width: calc(100vw - (5rem + 8rem) );
+  @media screen and (min-width: 700px){
+    // width: 100% / 5;
+    
   }
 
   // Maintain aspect ratio
@@ -16,11 +15,13 @@
     padding-top: (9 / 16) * 100%;
   }
   > iframe {
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    object-fit: scale-down;
   }
   
   border: 1px solid $dark;

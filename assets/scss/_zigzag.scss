@@ -1,7 +1,30 @@
+// Makes an alternating layout
 .zigzag{
-  figure{
-    display: grid;
-    grid-template-columns: repeat(2, calc(50% - 0.5em));
-    grid-column-gap: 1em;
+  width: 100%;
+  display: grid;
+  grid-row-gap: 2em;
+
+  @media screen and (min-width: 700px) {
+    // grid-template-rows: 40vh;
+
+    // Assumes the item only has two direct children
+    .zz-item{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, calc(50% - 1em));
+      grid-column-gap: 2em;
+
+      > *{
+        margin: 0;
+      }
+
+      // Even items
+      &:nth-of-type(2n){
+        > :nth-child(2){
+          order: -1;
+        }
+      }
+    }
   }
+  
 }

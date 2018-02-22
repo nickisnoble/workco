@@ -5,10 +5,12 @@
   line-height: 1;
   letter-spacing: -0.5px;
 
+  position: fixed;
+  top: 0;
+  z-index: 7;
+
   @supports(position: sticky){
     position: sticky;
-    top: 0;
-    z-index: 7;
   }
 
   font-size: 0.75rem;
