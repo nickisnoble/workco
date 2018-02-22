@@ -6,7 +6,8 @@ $gray:      #aaa;
 $light:     #f6f6f6;
 $white:     #fff;
 
-$transparency: rgba(0,0,0,0.35);
+$transparency:            rgba(0,0,0,0.35);
+$transparency-light:      transparentize( $transparency, 0.25 );
 
 $colors: (
   highlight: $highlight,
@@ -16,7 +17,11 @@ $colors: (
   light:     $light,
   white:     $white,
 
-  transparency:     $transparency,
+  transparency:           $transparency,
+  transparency-light:     $transparency-light,
 );
 
 $golden: 1.618;
+
+$sans: "AkzidGrtskNext-ExtraLight", "akzidenz-grotesk bq", helvetica, sans-serif;
+$serif: "Adobe Garamond Pro", garamond, georgia, serif;

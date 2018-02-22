@@ -13,7 +13,7 @@
   }
 
   > :last-child{
-    &:after{
+    &:before{
       content: "";
       z-index: 3;
       position: absolute;
@@ -21,7 +21,24 @@
       left: 0;
       bottom: 0;
       right: 0;
-      background: linear-gradient(to bottom, rgba($white, 0) 30%, $white 90%);
+      background: linear-gradient(to bottom, 
+        rgba($white, 0) 0%, 
+        rgba($white, 0) 30%, 
+        $white 90%
+      );
+    }
+
+    @media screen and (min-width: 1200px){
+      &:after{
+        content: "";
+        z-index: 3;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        height: 6rem;
+        background: linear-gradient(to bottom, $white, rgba($white, 0) );
+      }
     }
   }
 

@@ -4,6 +4,10 @@ html{
   @media screen and (min-width: 700px){
     font-size: 125%;
   }
+
+  @media screen and (min-width: 1800px){
+    font-size: 175%;
+  }
 }
 
 body{
@@ -80,9 +84,9 @@ a{
 }
 
 %sans, .sans{
-  font-family: "AkzidGrtskNext-ExtraLight", "akzidenz-grotesk bq", helvetica; // Cursive, so if it doesn't load, I'LL KNOW.
+  font-family: $sans;
 }
 
 %serif, .serif{
-  font-family: "Adobe Garamond Pro", garamond, georgia, serif;
+  font-family: $serif;
 }
