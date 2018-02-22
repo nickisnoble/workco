@@ -2,16 +2,20 @@ br{
   margin: 0;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
 figure{
   width: 100%;
   display: block;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;;
 }
 
 figcaption{
-  :first-child{
-    margin-top: 0;
-  }
+  :first-child{ margin-top: 0; }
 }
 
 iframe, object, embed {
