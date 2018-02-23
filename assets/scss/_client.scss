@@ -6,6 +6,7 @@
 }
 
 .client-grid {
+  position: relative;
   display: grid;
   grid-gap: 1px;
 
@@ -14,12 +15,27 @@
   @media screen and (min-width: 700px){
     grid-template-columns: 1fr 1fr;
   }
-
   @media screen and (min-width: 1200px){
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  background-color: $transparency-light;
+  background-color: $transparency-light; // This is the vertical / horizontal rules
+  margin-left: -1rem;
+  margin-right: -1rem;
+
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%; 
+    width: 1rem;// should match negative margin
+    background-color: $white;
+  }
+
+  &:before{ left: 0; }
+  &:after{ right: 0; }
 
   .client{
     padding: 2rem 1rem;
