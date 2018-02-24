@@ -20,7 +20,7 @@ body{
   }
 }
 
-h1, h2, h3{
+h1, h2, h3, h5{ // Skip H4
   @extend %sans;
   line-height: 1.35;
   font-weight: 700;
@@ -61,6 +61,11 @@ h4{
   }
 }
 
+h5{
+  font-size: 0.88em;
+  margin-bottom: 1em;
+}
+
 p{
   strong{
     @extend %sans;
@@ -97,4 +102,13 @@ em{
 
 %serif, .serif{
   font-family: $serif;
+}
+
+// Alignment utilities 
+$alignments: right left center;
+
+@each $alignment in $alignments {
+  .t-#{$alignment}{
+    text-align: $alignment;
+  }
 }
