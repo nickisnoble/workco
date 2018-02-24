@@ -74,6 +74,11 @@ a{
   color: inherit;
 }
 
+em{
+  @extend %serif;
+  font-style: italic; 
+}
+
 .title{
   color: $highlight;
   text-transform: uppercase;
