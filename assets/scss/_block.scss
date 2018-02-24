@@ -8,6 +8,17 @@
     padding-bottom: 2rem;
   }
 
+  .cta{ // call to action
+    @extend %sans;
+    display: block;
+    color: $transparency;
+    font-size: 0.75em;
+    &:hover{
+      text-decoration: underline;
+      color: $highlight;
+    }
+  }
+
   :first-child { margin-top:    0; }
   :last-child {  margin-bottom: 0; }
 }
