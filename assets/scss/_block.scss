@@ -11,11 +11,10 @@
   .cta{ // call to action
     @extend %sans;
     display: block;
-    color: $transparency;
     font-size: 0.75em;
+    opacity: 0.5;
     &:hover{
-      text-decoration: underline;
-      color: $highlight;
+      opacity: 1;
     }
   }
 

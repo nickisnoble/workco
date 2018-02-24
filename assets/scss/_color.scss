@@ -3,8 +3,8 @@
 @each $color, $value in $colors{
   
   // Create text color classes
-  .c-#{$color}{ color: #{$value}; }
+  .c-#{$color}{ color: #{$value} !important; }
   
   // Create background color classes
-  .b-#{$color}{ background-color: #{$value}; }
+  .b-#{$color}{ background-color: #{$value} !important; }
 }
