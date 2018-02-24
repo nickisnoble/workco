@@ -70,3 +70,44 @@ li{
     &:last-child:after{       content: ".";  }
   }
 }
+
+.letter-list{
+  counter-reset: letters;
+
+  li{
+    position: relative;
+    
+    margin-top: 0;
+    padding-left: 31.18%;
+    padding-top:    1em;
+    padding-bottom: 1em;
+
+    border-top: 1px solid $transparency-light;
+
+    @media screen and (min-width: 700px){
+      padding-top:    2em;
+      padding-bottom: 3em;
+    }
+
+    &:before{
+      content: counter(letters, upper-alpha);
+      counter-increment: letters;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 100%;
+      margin-top: 0;
+
+      // font-family: ;
+      font-size: 4rem;
+      color: $black;
+
+      @media screen and (min-width: 700px){
+        top: 1rem;
+        font-size: 6rem;
+      }
+    }
+  }
+}
