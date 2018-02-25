@@ -5,6 +5,10 @@ node_modules
 dist
 *.css
 
+#Ignore images
+*.png
+*.jpg
+
 # Ignore gack
 *.log
-DS_Store
+.DS_Store
