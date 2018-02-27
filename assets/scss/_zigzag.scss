@@ -2,18 +2,19 @@
 .zigzag{
   display: grid;
   grid-auto-rows: minmax(30vh, auto);
-  grid-row-gap: 2em;
+  grid-row-gap: 3em;
 
   // Assumes the item only has two direct children
   .zz-item{
     margin: 0;
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1200px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 2em;
 
       > *{
         margin: 0;
+        position: relative;
       }
 
       // Even items
