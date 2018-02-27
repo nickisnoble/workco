@@ -18,7 +18,7 @@ img{
   height: auto;
 
   a &{
-    box-shadow: 0 0 0 5px transparent;
+    box-shadow: 0 0 0 0 $transparency-light;
 
     &:hover{
       box-shadow: 0 0 0 5px $transparency;
