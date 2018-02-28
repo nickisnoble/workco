@@ -1,0 +1,11 @@
+#candidate{
+  .bio{
+    grid-column: 1 / 3;
+  }
+
+  .headshot{
+    background: $light;
+    border-radius: 50%;
+    transform: scale(0.8);
+  }
+}
