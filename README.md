@@ -1,6 +1,6 @@
 # Work & Co
 
-This is an application of sorts to [Work & Co](http://work.co). I decided I was going to ruthlessly copy the design of their site, but where they used React I used no JavaScript at all (save for analytics). Because apparently I'm a masochist.
+This is an application of sorts to [Work & Co](http://work.co). I decided I was going to copy the design of their site, but where they used React I used no JavaScript at all (save for analytics). Because apparently I'm a masochist.
 
 I hope they find this act of theft flattering.
 
