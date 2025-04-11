@@ -2,11 +2,15 @@
 	"name": "NNW-workco",
 	"description": "A microsite to apply for a job at Work&Co",
 	"author": "Nick Noble",
+	"type": "module",
+	"scripts": {
+		"dev": "bunx --bun vite",
+		"build": "bunx --bun vite build",
+		"preview": "bunx --bun vite preview"
+	},
 	"devDependencies": {
-		"browser-sync": "^2.23.6",
-		"es6-promise": "^4.2.4",
-		"gulp": "^3.9.1",
-		"gulp-autoprefixer": "^4.1.0",
-		"gulp-sass": "^3.1.0"
+		"sass": "^1.69.5",
+		"vite": "^5.0.0",
+		"autoprefixer": "^10.4.16"
 	}
 }
